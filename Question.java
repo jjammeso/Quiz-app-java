@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Question {
 
     private int id;
@@ -10,14 +12,6 @@ public class Question {
         this.question = question;
         this.opt = opt;
         this.answer = answer;
-    }
-
-    public void displayQuestion(){
-        System.out.println(this.id);
-        System.out.println(this.question);
-        for (String string : opt) {
-            System.out.println(string);
-        }
     }
 
     public int getId() {
@@ -51,4 +45,11 @@ public class Question {
     public void setAnswer(String answer) {
         this.answer = answer;
     }
+
+    @Override
+    public String toString() {
+        return "Question [id=" + id + ", question=" + question + ", opt=" + Arrays.toString(opt) + ", answer=" + answer
+                + "]";
+    }
+
 }
