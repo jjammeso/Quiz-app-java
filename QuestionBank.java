@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class QuestionBank {
-    final int TOTAL_QUESTION = 5;
+    final int TOTAL_QUESTION = 20;
     Question[] questions = new Question[TOTAL_QUESTION];
     String selection[] = new String[TOTAL_QUESTION];
 
