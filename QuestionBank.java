@@ -16,6 +16,11 @@ public class QuestionBank {
         try {
             File obj = new File(filePath);
             Scanner myReader = new Scanner(obj);
+
+            if (myReader.hasNextLine()) {  
+                myReader.nextLine(); // Skip the first line (column names)
+            }
+    
             int i = 0;
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
