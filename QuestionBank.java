@@ -32,7 +32,7 @@ public class QuestionBank {
             }
             myReader.close();
         } catch (FileNotFoundException e) {
-            System.out.println("An error occurred");
+            System.out.println("An error occurred" + e);
             e.printStackTrace();
         }
     }
